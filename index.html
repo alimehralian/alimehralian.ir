@@ -16,7 +16,7 @@
 </head>
 <body>
     <!-- dark switch -->
-    <div class="cursor-pointer absolute right-5 top-5 dark:bg-zinc-700 p-3 rounded-full bg-gray-200" onclick="dark_switch()">
+    <div class="cursor-pointer absolute right-5 top-5 dark:bg-zinc-700 p-3 rounded-full bg-gray-200 z-20" onclick="dark_switch()">
         <svg id="sun_mode" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 " viewBox="0 0 24 24" stroke="white" stroke-width="2">
             <path fill="white" stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
         </svg>
@@ -25,9 +25,9 @@
         </svg>
     </div>
 
-    <div class="absolute left-0 top-0">
+    <!-- <div class="absolute left-0 top-0">
         <ul>
-            <li>ss
+            <li>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
@@ -36,25 +36,26 @@
 
             </li>
         </ul>
-    </div>
+    </div> -->
 
-    <div class="bg-my-yellow h-[200%] fixed -top-2/4 w-full left-[-83%] -rotate-[15deg]"></div>
-    <div class="bg-white dark:bg-my-black w-full h-screen text-white grid grid-cols-7">
-        <div class="col-span-3 shadow bg-alimehralian bg-cover z-10 bg-top h-100vh-80 rounded-3xl my-10 ml-10 mr-28">
-            
-        </div>
-        
-        <div class="col-span-4 flex items-center font-poppins -ml-52">
-            <div class="mx-auto max-w-xl bodd">
-                <h1 class="text-my-yellow name-title pl-16 text-[51px] font-bold leading-tight mb-3">I'M ALI MEHRALIAN.<span class="block text-gray-500 dark:text-white">WEB DESIGNER</span></h1>
-                <p class="leading-9 mb-3 text-gray-500 dark:text-white">I'm a Tunisian based web designer & front‑end developer focused on
-                    crafting clean & user‑friendly experiences, I am passionate about
-                    building excellent software that improves the lives of those
-                    around me.
-                </p>
-                <button class="button bodd-hover:text-gray-400 border-my-yellow border-2 px-12 py-3 rounded-full relative more-info-btn bg-transparent">
-                    <span class="button-text z-10 text-gray-500 dark:text-white">more about me</span><span class="inline-block relative ml-6 top-1 "><svg class="fill-current text-gray-500 dark:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M12.068.016l-3.717 3.698 5.263 5.286h-13.614v6h13.614l-5.295 5.317 3.718 3.699 11.963-12.016z"/></svg></span>
-                </button>
+    <div class="bg-my-yellow h-[200%] fixed -top-2/4 w-full left-[-83%] -rotate-[15deg] lg:block hidden"></div>
+    <div class="bg-white dark:bg-my-black w-full text-white h-screen lg:block flex justify-center items-center">
+        <div class="flex flex-col lg:flex-row ">
+            <div class="lg:w-1/3 z-10">
+                <div class="lg:rounded-3xl rounded-full mt-0 mb-5 top-full lg:h-100vh-80 h-[270px] w-[270px] border-4 border-neutral-800 lg:border-none lg:w-auto bg-alimehralian bg-cover lg:bg-top bg-center lg:my-10 lg:ml-10 shadow mx-auto"></div>
+            </div>    
+            <div class="lg:w-2/3 flex lg:items-center font-poppins -ml-5 text-center lg:text-left">
+                <div class="mx-auto max-w-xl bodd">
+                    <h1 class="text-my-yellow name-title font-bold leading-tight mb-3 pl-0 text-[42px] xl:text-[51px] xl:pl-16">I'M ALI MEHRALIAN.<span class="block text-gray-500 dark:text-white">WEB DESIGNER</span></h1>
+                    <p class="leading-9 mb-3 text-gray-500 dark:text-white">I'm a Tunisian based web designer & front‑end developer focused on
+                        crafting clean & user‑friendly experiences, I am passionate about
+                        building excellent software that improves the lives of those
+                        around me.
+                    </p>
+                    <button class="button bodd-hover:text-gray-400 border-my-yellow border-2 px-12 py-3 rounded-full relative more-info-btn bg-transparent">
+                        <span class="button-text z-10 text-gray-500 dark:text-white">more about me</span><span class="inline-block relative ml-6 top-1 "><svg class="fill-current text-gray-500 dark:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M12.068.016l-3.717 3.698 5.263 5.286h-13.614v6h13.614l-5.295 5.317 3.718 3.699 11.963-12.016z"/></svg></span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
