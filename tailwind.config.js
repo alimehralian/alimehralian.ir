@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode : 'class',
-  content: ["./src/**/*.{html,js}"],
+  content: ["src/**/*.{html,js}"],
   theme: {
     extend: {
       colors: {
@@ -9,7 +9,7 @@ module.exports = {
         'my-yellow' : '#ffb400',
       },
       backgroundImage: {
-        'alimehralian': "url('/src/assets/images/alimehralian.jpg')",
+        'alimehralian': "url('/src/images/alimehralian.jpg')",
       },
       height: {
         '100vh-80': 'calc(100vh - 80px)',
