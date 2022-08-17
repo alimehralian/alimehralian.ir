@@ -16,7 +16,15 @@ module.exports = {
       },
       fontFamily: {
         'poppins': ['poppins', 'sans-serif'] 
-      },      
+      },  
+      keyframes: {
+        progress: {
+          '0%': { 'stroke-dasharray': '0 100' },
+        }
+      },
+      animation: {
+        progress: 'progress 1s ease-out forwards',
+      },    
     }
   },
   plugins: [],
