@@ -22,3 +22,6 @@ function dark_switch() {
 }
 
 
+a = Date.now();
+console.log(new Date(a));
+
