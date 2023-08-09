@@ -1,7 +1,4 @@
-
-if(localStorage.theme === undefined){
-    localStorage.theme = "dark";
-}
+console.log(localStorage.theme);
 
 // auto check theme
 if (localStorage.theme === 'dark') {

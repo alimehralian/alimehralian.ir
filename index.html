@@ -9,6 +9,17 @@
     <meta name="keywords" content="Ali Mehralian , ali mehralian, علی مهرعلیان , برنامه نویس وب , طراح سایت">
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script>
+        if(localStorage.theme === undefined){
+            localStorage.theme = "dark";
+        }
+        
+        if (localStorage.theme === 'dark') {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
 </head>
 <body>
     <!-- dark switch btn-->
