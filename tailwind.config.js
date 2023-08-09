@@ -9,7 +9,7 @@ module.exports = {
         'my-yellow' : '#ffb400',
       },
       backgroundImage: {
-        'alimehralian': "url('/src/images/alimehralian.jpg')",
+        'alimehralian': "url('/src/images/alimehralian4.png')",
       },
       height: {
         '100vh-80': 'calc(100vh - 80px)',
