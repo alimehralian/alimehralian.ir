@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Ali Mehralian</title>
+    <link rel="stylesheet" href="../src/css/main.css">
+    <script>
+        if(localStorage.theme === undefined){
+            localStorage.theme = "dark";
+        }
+        
+        if (localStorage.theme === 'dark') {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+</head>
+<body>
+    <!-- dark switch btn-->
+    <div class="cursor-pointer fixed right-5 top-5 dark:bg-zinc-700 p-3 rounded-full bg-gray-200 z-20" onclick="dark_switch()">
+        <svg id="sun_mode" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 " viewBox="0 0 24 24" stroke="white" stroke-width="2">
+            <path fill="white" stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+        <svg id="moon_mode" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="gray" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+        </svg>
+    </div>
+
+    <div class="fixed lg:top-1/2 lg:right-5 text-white lg:-translate-y-1/2 lg:bottom-auto bottom-0 bg-zinc-800 w-full text-center z-20 lg:bg-transparent lg:w-auto">
+        <ul class="lg:space-y-6 lg:py-0 lg:space-x-0 py-2 space-x-6">
+            <li class="p-3 dark:bg-zinc-700 bg-gray-200 rounded-full lg:block inline-block">
+                <a href="index.html" class="dark:fill-white fill-zinc-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 lg:h-6 lg:w-6" viewBox="0 0 20 20">
+                        <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                    </svg>
+                </a>
+            </li>
+            <li class="p-3 bg-my-yellow rounded-full lg:block inline-block">
+                <a href="about.html" class=" dark:fill-white fill-zinc-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 lg:h-6 lg:w-6" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </li>
+            <li class="p-3 dark:bg-zinc-700 bg-gray-200 rounded-full lg:block inline-block">
+                <a href="https://wa.me/9372200206" class=" dark:fill-white fill-zinc-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 lg:h-6 lg:w-6" viewBox="0 0 20 20">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="bg-white dark:bg-my-black w-full font-poppins text-white min-h-screen lg:block">
+        <h1 class="text-6xl font-bold text-center pt-20 dark:text-white text-gray-500">ABOUT <span class="text-my-yellow">ME</span></h1>
+        <div class="max-w-6xl mx-auto px-5">
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 px-0 md:px-3">
+
+                <div>
+                    <h2 class="text-2xl font-bold mb-5 mt-24">PERSONAL INFOS</h2>
+                    <ul class="pr-0 grid grid-cols-2 dark:text-white text-gray-500">
+                        <li class="my-3"><span class="text-zinc-400">First Name: </span><span class="block md:inline-block lg:block xl:inline-block"> Ali</span></li>
+                        <li class="my-3"><span class="text-zinc-400">Last Name: </span><span class="block md:inline-block lg:block xl:inline-block"> Mehralian</span></li>
+                        <li class="my-3"><span class="text-zinc-400">Age: </span><span class="block md:inline-block lg:block xl:inline-block"> 20 Years</span></li>
+                        <li class="my-3"><span class="text-zinc-400">Nationality: </span><span class="block md:inline-block lg:block xl:inline-block"> Iranian</span></li>
+                        <li class="my-3"><span class="text-zinc-400">Freelance: </span><span class="block md:inline-block lg:block xl:inline-block"> Available</span></li>
+                        <li class="my-3"><span class="text-zinc-400">Address: </span><span class="block md:inline-block lg:block xl:inline-block"> Iran , Qazvin</span></li>
+                        <li class="my-3"><span class="text-zinc-400">Phone: </span><a href="tel:+989372200206" class="block md:inline-block lg:block xl:inline-block text-my-yellow"> +98 9372200206</a></li>
+                        <li class="my-3"><span class="text-zinc-400">Email: </span><a href="mailto:Hi@alimehralian.ir" class="block md:inline-block lg:block xl:inline-block text-my-yellow"> Hi@alimehralian.ir</a></li>
+                        <li class="my-3"><span class="text-zinc-400">GitHub: </span><a href="https://github.com/alimehralian" class="block md:inline-block lg:block xl:inline-block text-my-yellow"> alimehralian</a></li>
+                        <li class="my-3"><span class="text-zinc-400">Linkedin: </span><a href="#" class="block md:inline-block lg:block xl:inline-block text-my-yellow"> alimehralian</a></li>
+                    </ul>
+                    <button class="mt-5 hover:bg-my-yellow duration-200 button bodd-hover:text-gray-400 border-my-yellow border-2 pl-12 pr-16 py-3 rounded-full relative more-info-btn bg-transparent">
+                        <a href="src/cv/AliMehralian.pdf" class="button-text z-10 text-gray-500 dark:text-white">DOWNLOAD CV</a><a href="src/cv/AliMehralian.pdf" class="inline-block ml-6 bg-my-yellow p-4 rounded-full absolute -right-[1px] -top-[2px] border-my-yellow border-2"><svg class="fill-current text-gray-500 dark:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M12.068.016l-3.717 3.698 5.263 5.286h-13.614v6h13.614l-5.295 5.317 3.718 3.699 11.963-12.016z"/></svg></a>
+                    </button>
+                    
+                </div>
+
+                <div>
+                    <div class="grid grid-cols-2 mt-8 lg:mt-24">
+                        <div class="border-zinc-800 border rounded-md mb-8 mr-4 p-8">
+                            <h3 class="text-5xl text-my-yellow font-bold mb-2 about-num relative">5</h3>
+                            <div class="about-num-text relative sm:pl-10 dark:text-white text-gray-500">YEARS OF <span class="block">EXPERIENCE</span></div>
+                        </div>
+                        <div class="border-zinc-800 border rounded-md mb-8 ml-4 p-8">
+                            <h3 class="text-5xl text-my-yellow font-bold mb-2 about-num relative">20</h3>
+                            <div class="about-num-text relative sm:pl-10 dark:text-white text-gray-500">COMPLETED <span class="block">PROJECTS</span></div>
+                        </div>
+                        <div class="border-zinc-800 border rounded-md mr-4 p-8">
+                            <h3 class="text-5xl text-my-yellow font-bold mb-2 about-num relative">100</h3>
+                            <div class="about-num-text relative sm:pl-10 dark:text-white text-gray-500">YHAPPY <span class="block">CUSTOMERS</span></div>
+                        </div>
+                        <div class="border-zinc-800 border rounded-md ml-4 p-8">
+                            <h3 class="text-5xl text-my-yellow font-bold mb-2 about-num relative">8</h3>
+                            <div class="about-num-text relative sm:pl-10 dark:text-white text-gray-500">AWARDS <span class="block">WON</span></div>
+                        </div>
+                    </div>
+                </div>   
+
+            </div>
+
+            <hr class="max-w-xl mx-auto my-20 border-gray-800">
+
+            <div class="pb-28 lg:pb-10">
+                <h3 class="text-2xl font-bold text-center lg:pt-20 dark:text-white text-gray-500">MY SKILLS</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4">
+                    <div class="single-chart w-full justify-around">
+                        <svg viewBox="0 0 36 36" class="circular-chart orange block mt-10 mb-6 mx-auto max-w-screen-sm max-h-24 sm:max-h-32">
+                            <path class="circle-bg stroke-gray-200 dark:stroke-zinc-700 stroke-[3] fill-transparent"
+                            d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <path class="circle stroke-my-yellow stroke-[2.8] fill-transparent animate-progress stroke-round"
+                            stroke-dasharray="90, 100"
+                            d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <text x="18" y="20.35" class="percentage fill-gray-800 text-[0.45rem] text-middle dark:fill-white">90%</text>
+                        </svg>
+                        <p class="text-center dark:text-white text-gray-500">HTML</p>
+                    </div>
+                    <div class="single-chart w-full justify-around">
+                        <svg viewBox="0 0 36 36" class="circular-chart orange block mt-10 mb-6 mx-auto max-w-screen-sm  max-h-24 sm:max-h-32">
+                            <path class="circle-bg stroke-gray-200 dark:stroke-zinc-700 stroke-[3] fill-transparent"
+                            d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <path class="circle stroke-my-yellow stroke-[2.8] fill-transparent animate-progress stroke-round"
+                            stroke-dasharray="90, 100"
+                            d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <text x="18" y="20.35" class="percentage fill-gray-800 text-[0.45rem] text-middle dark:fill-white">90%</text>
+                        </svg>
+                        <p class="text-center dark:text-white text-gray-500">CSS</p>
+                    </div>
+                    <div class="single-chart w-full justify-around">
+                        <svg viewBox="0 0 36 36" class="circular-chart orange block mt-10 mb-6 mx-auto max-w-screen-sm  max-h-24 sm:max-h-32">
+                            <path class="circle-bg stroke-gray-200 dark:stroke-zinc-700 stroke-[3] fill-transparent"
+                            d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <path class="circle stroke-my-yellow stroke-[2.8] fill-transparent animate-progress stroke-round"
+                            stroke-dasharray="80, 100"
+                            d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <text x="18" y="20.35" class="percentage fill-gray-800 text-[0.45rem] text-middle dark:fill-white">80%</text>
+                        </svg>
+                        <p class="text-center dark:text-white text-gray-500">JavaScript</p>
+                    </div>
+                    <div class="single-chart w-full justify-around">
+                        <svg viewBox="0 0 36 36" class="circular-chart orange block mt-10 mb-6 mx-auto max-w-screen-sm  max-h-24 sm:max-h-32">
+                            <path class="circle-bg stroke-gray-200 dark:stroke-zinc-700 stroke-[3] fill-transparent"
+                            d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <path class="circle stroke-my-yellow stroke-[2.8] fill-transparent animate-progress stroke-round"
+                            stroke-dasharray="80, 100"
+                            d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <text x="18" y="20.35" class="percentage fill-gray-800 text-[0.45rem] text-middle dark:fill-white">80%</text>
+                        </svg>
+                        <p class="text-center dark:text-white text-gray-500">jQuery</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4">
+                    <div class="single-chart w-full justify-around">
+                        <svg viewBox="0 0 36 36" class="circular-chart orange block mt-10 mb-6 mx-auto max-w-screen-sm  max-h-24 sm:max-h-32">
+                            <path class="circle-bg stroke-gray-200 dark:stroke-zinc-700 stroke-[3] fill-transparent"
+                            d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <path class="circle stroke-my-yellow stroke-[2.8] fill-transparent animate-progress stroke-round"
+                            stroke-dasharray="85, 100"
+                            d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <text x="18" y="20.35" class="percentage fill-gray-800 text-[0.45rem] text-middle dark:fill-white">85%</text>
+                        </svg>
+                        <p class="text-center dark:text-white text-gray-500">Tailwind & Bootstrap</p>
+                    </div>
+                    <div class="single-chart w-full justify-around">
+                        <svg viewBox="0 0 36 36" class="circular-chart orange block mt-10 mb-6 mx-auto max-w-screen-sm  max-h-24 sm:max-h-32">
+                            <path class="circle-bg stroke-gray-200 dark:stroke-zinc-700 stroke-[3] fill-transparent"
+                            d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <path class="circle stroke-my-yellow stroke-[2.8] fill-transparent animate-progress stroke-round"
+                            stroke-dasharray="80, 100"
+                            d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <text x="18" y="20.35" class="percentage fill-gray-800 text-[0.45rem] text-middle dark:fill-white">80%</text>
+                        </svg>
+                        <p class="text-center dark:text-white text-gray-500">MySQL</p>
+                    </div>
+                    <div class="single-chart w-full justify-around">
+                        <svg viewBox="0 0 36 36" class="circular-chart orange block mt-10 mb-6 mx-auto max-w-screen-sm  max-h-24 sm:max-h-32">
+                            <path class="circle-bg stroke-gray-200 dark:stroke-zinc-700 stroke-[3] fill-transparent"
+                            d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <path class="circle stroke-my-yellow stroke-[2.8] fill-transparent animate-progress stroke-round"
+                            stroke-dasharray="75, 100"
+                            d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <text x="18" y="20.35" class="percentage fill-gray-800 text-[0.45rem] text-middle dark:fill-white">75%</text>
+                        </svg>
+                        <p class="text-center dark:text-white text-gray-500">PHP</p>
+                    </div>
+                    <div class="single-chart w-full justify-around">
+                        <svg viewBox="0 0 36 36" class="circular-chart orange block mt-10 mb-6 mx-auto max-w-screen-sm  max-h-24 sm:max-h-32">
+                            <path class="circle-bg stroke-gray-200 dark:stroke-zinc-700 stroke-[3] fill-transparent"
+                            d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <path class="circle stroke-my-yellow stroke-[2.8] fill-transparent animate-progress stroke-round"
+                            stroke-dasharray="80, 100"
+                            d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <text x="18" y="20.35" class="percentage fill-gray-800 text-[0.45rem] text-middle dark:fill-white">80%</text>
+                        </svg>
+                        <p class="text-center dark:text-white text-gray-500">WordPress</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="../src/js/js.js"></script>
+</html>
