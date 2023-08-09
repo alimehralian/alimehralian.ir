@@ -1,3 +1,8 @@
+
+if(localStorage.theme === undefined){
+    localStorage.theme = "dark";
+}
+
 // auto check theme
 if (localStorage.theme === 'dark') {
     document.getElementById("moon_mode").style.display = "none";
