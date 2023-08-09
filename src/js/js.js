@@ -1,5 +1,5 @@
 // auto check theme
-if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+if (localStorage.theme === 'dark') {
     document.getElementById("moon_mode").style.display = "none";
     document.getElementById("sun_mode").style.display = "block";
 } else {
