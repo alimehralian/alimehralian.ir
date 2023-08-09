@@ -1,15 +1,24 @@
 // auto check theme
-document.getElementById("moon_mode").style.display = "none";
-document.getElementById("sun_mode").style.display = "block";
+if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.getElementById("moon_mode").style.display = "none";
+    document.getElementById("sun_mode").style.display = "block";
+} else {
+    document.getElementById("moon_mode").style.display = "block";
+    document.getElementById("sun_mode").style.display = "none";
+}
 
 function dark_switch() {
     
     if(document.documentElement.classList.contains("dark")){
         localStorage.theme = "light";
         document.documentElement.classList.toggle("light");
+        document.documentElement.classList.add('dark');
+
     }else{
         localStorage.theme = "dark";
         document.documentElement.classList.toggle("dark");
+        document.documentElement.classList.remove('dark')
+
     }
 
     location.reload();
