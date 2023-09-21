@@ -1,4 +1,3 @@
-console.log(localStorage.theme);
 
 // auto check theme
 if (localStorage.theme === 'dark') {
@@ -45,3 +44,4 @@ $(document).ready(function () {
     });
 
 });
+

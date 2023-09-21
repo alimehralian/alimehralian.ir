@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Ali Mehralian</title>
+    <link rel="stylesheet" href="src/css/main.css">
+    <script>
+        
+        
+        if(localStorage.theme === undefined){
+            localStorage.theme = "dark";
+        }
+        
+        if (localStorage.theme === 'dark') {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+
+    </script>
+</head>
+<body>
+    <!-- dark switch btn-->
+    <div class="cursor-pointer fixed right-5 top-5 dark:bg-zinc-700 p-3 rounded-full bg-gray-200 z-20" onclick="dark_switch()">
+        <svg id="sun_mode" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 " viewBox="0 0 24 24" stroke="white" stroke-width="2">
+            <path fill="white" stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+        <svg id="moon_mode" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="gray" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+        </svg>
+    </div>
+
+    <div class="fixed lg:top-1/2 lg:right-5 text-white lg:-translate-y-1/2 lg:bottom-auto bottom-0 bg-zinc-800 w-full text-center z-20 lg:bg-transparent lg:w-auto">
+        <ul class="lg:space-y-6 lg:py-0 lg:space-x-0 py-2 space-x-6">
+            <li class="p-3 dark:bg-zinc-700 bg-gray-200 rounded-full lg:block inline-block">
+                <a href="index.html" class="dark:fill-white fill-zinc-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 lg:h-6 lg:w-6" viewBox="0 0 20 20">
+                        <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                    </svg>
+                </a>
+            </li>
+            <li class="p-3 dark:bg-zinc-700 rounded-full lg:block inline-block">
+                <a href="about.html" class=" dark:fill-white fill-zinc-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 lg:h-6 lg:w-6" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </li>
+            <li class="p-3 bg-my-yellow rounded-full lg:block inline-block">
+                <a href="portfolio.html" class=" dark:fill-white fill-zinc-700">
+                    <svg class="h-5 w-5 lg:h-6 lg:w-6" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-6 -6 72.00 72.00" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M56.99,13.5H55v-3H45v3h-4V7.706C41,5.938,39.562,4.5,37.794,4.5H22.206C20.438,4.5,19,5.938,19,7.706V13.5h-4v-3H5v3H3.01 C1.351,13.5,0,14.851,0,16.51v35.98c0,1.659,1.351,3.01,3.01,3.01H8h2h40h2h1h3.99c1.659,0,3.01-1.351,3.01-3.01V16.51 C60,14.851,58.649,13.5,56.99,13.5z M21,7.706C21,7.041,21.541,6.5,22.206,6.5h15.588C38.459,6.5,39,7.041,39,7.706V13.5H21V7.706z M8,53.5v-38h2v38H8z M50,53.5v-38h2v38H50z"></path> </g></svg>
+                </a>
+            </li>
+            <li class="p-3 dark:bg-zinc-700 bg-gray-200 rounded-full lg:block inline-block">
+                <a href="https://t.me/ali_mh_a" class=" dark:fill-white fill-zinc-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 lg:h-6 lg:w-6" viewBox="0 0 20 20">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="bg-white dark:bg-my-black w-full font-poppins text-white min-h-screen lg:block">
+        <h1 class="text-6xl font-bold text-center pt-20 dark:text-white text-gray-500">MY <span class="text-my-yellow">PORTFOLIO</span></h1>
+
+        <div class="max-w-6xl mx-auto px-5 mt-24 pb-16">
+
+            <ul
+            class="mb-5 list-none border-b-0 pl-0 text-center"
+            role="tablist"
+            data-te-nav-ref>
+                <li role="presentation" class="text-center inline-block">
+                    <a
+                        href="#tabs-wordpress"
+                        class="my-2 border-transparent px-4 pb-3.5 pt-4  dark:data-[te-nav-active]:text-my-yellow hover:isolate hover:text-my-yellow focus:isolate focus:border-transparent"
+                        data-te-toggle="pill"
+                        data-te-target="#tabs-wordpress"
+                        data-te-nav-active
+                        role="tab"
+                        aria-controls="tabs-wordpress"
+                        aria-selected="true"
+                        >Wordpress</a
+                    >
+                </li>
+                <li role="presentation" class="text-center  inline-block">
+                    <a
+                        href="#tabs-cms"
+                        class="my-2 border-transparent px-4 pb-3.5 pt-4  dark:data-[te-nav-active]:text-my-yellow hover:isolate hover:text-my-yellow focus:isolate focus:border-transparent"
+                        data-te-toggle="pill"
+                        data-te-target="#tabs-cms"
+                        role="tab"
+                        aria-controls="tabs-cms"
+                        aria-selected="false"
+                        >Dedicated Cms</a
+                    >
+                </li>
+                <li role="presentation" class="text-center inline-block">
+                    <a
+                        href="#tabs-logo"
+                        class="my-2 border-transparent px-4 pb-3.5 pt-4  dark:data-[te-nav-active]:text-my-yellow hover:text-my-yellow focus:isolate focus:border-transparent"
+                        data-te-toggle="pill"
+                        data-te-target="#tabs-logo"
+                        role="tab"
+                        aria-controls="tabs-logo"
+                        aria-selected="false"
+                        >Logo</a
+                    >
+                </li>
+                <li role="presentation" class="text-center inline-block">
+                    <a
+                        href="#tabs-design"
+                        class="my-2 border-transparent px-4 pb-3.5 pt-4  dark:data-[te-nav-active]:text-my-yellow hover:text-my-yellow focus:isolate focus:border-transparent"
+                        data-te-toggle="pill"
+                        data-te-target="#tabs-design"
+                        role="tab"
+                        aria-controls="tabs-design"
+                        aria-selected="false"
+                        >Graphic Design</a
+                    >
+                </li>
+            </ul>
+
+            <!--Tabs content-->
+            <div class="mb-6">
+                <div
+                class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+                id="tabs-wordpress"
+                role="tabpanel"
+                aria-labelledby="tabs-wordpress"
+                data-te-tab-active>
+                    <div class="mt-12 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 px-0 md:px-3 gap-x-4 gap-y-10">
+                        <div class="h-96 overflow-hidden rounded-lg">
+                            <img src="/src/images/portfolio/1orange-full.png" alt="">
+                        </div>
+                        <div class="h-96 overflow-hidden rounded-lg">
+                            <img src="/src/images/portfolio/bourse-college.png" alt="">
+                        </div>
+                        <div class="h-96 overflow-hidden rounded-lg">
+                            <img src="/src/images/portfolio/wonder-bourse.png" alt="">
+                        </div>
+                        <div class="h-96 overflow-hidden rounded-lg">
+                            <img src="/src/images/portfolio/nitrofile-full.png" alt="">
+                        </div>
+                        <div class="h-96 overflow-hidden rounded-lg">
+                            <img src="/src/images/portfolio/raisin-full.png" alt="">
+                        </div>
+                        
+                        <div class="h-96 overflow-hidden rounded-lg">
+                            <img src="/src/images/portfolio/studioiran-full.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div
+                class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+                id="tabs-cms"
+                role="tabpanel"
+                aria-labelledby="tabs-cms">
+                    <div class="mt-12 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 px-0 md:px-3 gap-x-4 gap-y-10">
+                        <div class="h-96 overflow-hidden rounded-lg">
+                            <img src="/src/images/portfolio/daroustore-full.png" alt="">
+                        </div>
+                        <div class="h-96 overflow-hidden rounded-lg">
+                            <img src="/src/images/portfolio/kanonekosar-full.png" alt="">
+                        </div>
+                        <div class="h-96 overflow-hidden rounded-lg">
+                            <img src="/src/images/portfolio/majalehamozshi-full.png" alt="">
+                        </div>
+                        <div class="h-96 overflow-hidden rounded-lg">
+                            <img src="/src/images/portfolio/NemonehKar4.png" alt="">
+                        </div>
+                        <div class="h-96 overflow-hidden rounded-lg">
+                            <img src="/src/images/portfolio/shik.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div
+                class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+                id="tabs-logo"
+                role="tabpanel"
+                aria-labelledby="tabs-logo">
+                coming soon ...
+                </div>
+                <div
+                class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+                id="tabs-design"
+                role="tabpanel"
+                aria-labelledby="tabs-design">
+                coming soon ...
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+<script src="src/js/js.js"></script>
+</html>

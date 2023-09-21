@@ -2,6 +2,7 @@
 module.exports = {
   darkMode : 'class',
   content: ["*.{html,js}"],
+  plugins: [require("tw-elements/dist/plugin.cjs")],
   theme: {
     extend: {
       colors: {
@@ -9,7 +10,7 @@ module.exports = {
         'my-yellow' : '#ffb400',
       },
       backgroundImage: {
-        'alimehralian': "url('/src/images/alimehralian4.png')",
+        'alimehralian': "url('/src/images/alimehralian3.jpg')",
       },
       height: {
         '100vh-80': 'calc(100vh - 80px)',
