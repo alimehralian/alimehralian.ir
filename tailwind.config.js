@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       colors: {
         'my-black': '#111111',
-        'my-yellow' : '#ffb400',
+        'my-yellow' : '#aa00ff',
       },
       backgroundImage: {
         'alimehralian': "url('/src/images/alimehralian3.jpg')",
