@@ -885,7 +885,7 @@ video {
 }
 
 .bg-alimehralian {
-  background-image: url('/src/images/alimehralian3.jpg');
+  background-image: url('/src/images/alimh.jpg');
 }
 
 .bg-cover {
@@ -1215,12 +1215,6 @@ button:focus {
 }
 
 .before\:bg-my-yellow::before {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(170 0 255 / var(--tw-bg-opacity));
-}
-
-.after\:bg-my-yellow::after {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(170 0 255 / var(--tw-bg-opacity));
