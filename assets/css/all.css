@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins-Regular.ttf)
+}
+
+@font-face {
+    font-family: poppins;
+    font-weight: 700;
+    src: url(../fonts/Poppins-Bold.ttf)
+}
+
+body::-webkit-scrollbar {
+    width: 12px
+}
+
+body::-webkit-scrollbar-track {
+    background: #333
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border: 3px solid #333;
+    border-radius: 20px
+}
+
+body.light::-webkit-scrollbar-track {
+    background: #fff
+}
+
+body.light::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border: 3px solid #fff;
+    border-radius: 20px
+}
+
+button:focus {
+    outline: none!important
+}
+
+.name-title:before {
+    border-radius: 10px;
+    content: "";
+    height: 4px;
+    position: absolute;
+    width: 40px;
+    background-color: #ffb400;
+    margin-top: 28px;
+    margin-left: -64px
+}
+
+.about-num-text:before {
+    background: #777;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 13px;
+    width: 30px
+}
+
+.about-num:after {
+    content: "+";
+    font-size: 33px;
+    font-weight: 300;
+    position: absolute;
+    margin-left: 2px;
+    top: 0
+}
+
+.text-middle {
+    text-anchor: middle
+}
+
+.stroke-round {
+    stroke-linecap: round
+}
+
+@media screen and (max-width: 1280px) {
+    .name-title:before {
+        display:none
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .about-num-text:before {
+        display:none;
+        padding-left: 0
+    }
+}
