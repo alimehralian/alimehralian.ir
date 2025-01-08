@@ -562,6 +562,10 @@ video {
   bottom: 0px;
 }
 
+.left-2 {
+  left: 0.5rem;
+}
+
 .left-\[-83\%\] {
   left: -83%;
 }
@@ -674,6 +678,10 @@ video {
   display: flex;
 }
 
+.inline-flex {
+  display: inline-flex;
+}
+
 .grid {
   display: grid;
 }
@@ -686,6 +694,10 @@ video {
   height: 3rem;
 }
 
+.h-3 {
+  height: 0.75rem;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -694,16 +706,16 @@ video {
   height: 1.75rem;
 }
 
-.h-96 {
-  height: 24rem;
-}
-
 .h-\[200\%\] {
   height: 200%;
 }
 
 .h-\[270px\] {
   height: 270px;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .h-screen {
@@ -720,6 +732,10 @@ video {
 
 .w-12 {
   width: 3rem;
+}
+
+.w-3 {
+  width: 0.75rem;
 }
 
 .w-5 {
@@ -753,6 +769,17 @@ video {
 .-rotate-\[15deg\] {
   --tw-rotate: -15deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
 @keyframes progress {
@@ -848,7 +875,7 @@ video {
 
 .border-my-yellow {
   --tw-border-opacity: 1;
-  border-color: rgb(170 0 255 / var(--tw-border-opacity));
+  border-color: rgb(255 163 92 / var(--tw-border-opacity));
 }
 
 .border-transparent {
@@ -865,9 +892,14 @@ video {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
+.bg-green-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+
 .bg-my-yellow {
   --tw-bg-opacity: 1;
-  background-color: rgb(170 0 255 / var(--tw-bg-opacity));
+  background-color: rgb(255 163 92 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
@@ -885,7 +917,7 @@ video {
 }
 
 .bg-alimehralian {
-  background-image: url('/src/images/alimehralian3.jpg');
+  background-image: url('/src/images/alimehralian6.jpg');
 }
 
 .bg-cover {
@@ -917,7 +949,7 @@ video {
 }
 
 .stroke-my-yellow {
-  stroke: #aa00ff;
+  stroke: #ffa35c;
 }
 
 .stroke-\[2\.8\] {
@@ -1066,7 +1098,7 @@ video {
 
 .text-my-yellow {
   --tw-text-opacity: 1;
-  color: rgb(170 0 255 / var(--tw-text-opacity));
+  color: rgb(255 163 92 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -1085,6 +1117,10 @@ video {
 
 .opacity-100 {
   opacity: 1;
+}
+
+.opacity-75 {
+  opacity: 0.75;
 }
 
 .shadow {
@@ -1217,7 +1253,7 @@ button:focus {
 .before\:bg-my-yellow::before {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
-  background-color: rgb(170 0 255 / var(--tw-bg-opacity));
+  background-color: rgb(255 163 92 / var(--tw-bg-opacity));
 }
 
 .hover\:isolate:hover {
@@ -1226,7 +1262,7 @@ button:focus {
 
 .hover\:bg-my-yellow:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(170 0 255 / var(--tw-bg-opacity));
+  background-color: rgb(255 163 92 / var(--tw-bg-opacity));
 }
 
 .focus\:isolate:focus {
@@ -1271,7 +1307,7 @@ button:focus {
 
 :is(.dark .dark\:data-\[te-nav-active\]\:bg-my-yellow[data-te-nav-active]) {
   --tw-bg-opacity: 1;
-  background-color: rgb(170 0 255 / var(--tw-bg-opacity));
+  background-color: rgb(255 163 92 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 640px) {
@@ -1385,10 +1421,6 @@ button:focus {
 
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
